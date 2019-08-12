@@ -4,7 +4,7 @@ var app = express();
 
 
 //Sets an initial Port 
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 8088;
 
 
 //Handles Data Parsing
@@ -13,8 +13,8 @@ app.use(express.json());
 
 
 //Allows server to respond when users visit or request from various URL's
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 
 //Used to start Server
