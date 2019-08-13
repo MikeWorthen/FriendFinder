@@ -4,7 +4,8 @@ var app = express();
 
 
 //Sets an initial Port 
-var PORT = process.env.PORT || 8088;
+var PORT = process.env.PORT || 8089;
+
 
 
 //Handles Data Parsing
@@ -19,5 +20,5 @@ require("./app/routing/htmlRoutes")(app);
 
 //Used to start Server
 app.listen(PORT, function() {
-    console.log("App listening on PORT: " + PORT);
+    console.log("App listening on http://localhost:" + PORT);
   });

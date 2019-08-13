@@ -30,7 +30,7 @@
                     <div class="col-auto my-1">
                         <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
                         <select class="custom-select mr-sm-2" id="num1">
-                        <option selected>Choose...</option>
+                        <!-- <option selected>Choose...</option> -->
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -45,7 +45,7 @@
                     <div class="col-auto my-1">
                       <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
                       <select class="custom-select mr-sm-2" id="num2">
-                        <option selected>Choose...</option>
+                        <!-- <option selected>Choose...</option> -->
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -60,7 +60,7 @@
                     <div class="col-auto my-1">
                       <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
                       <select class="custom-select mr-sm-2" id="num3">
-                        <option selected>Choose...</option>
+                        <!-- <option selected>Choose...</option> -->
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -75,7 +75,7 @@
                     <div class="col-auto my-1">
                       <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
                       <select class="custom-select mr-sm-2" id="num4">
-                        <option selected>Choose...</option>
+                        <!-- <option selected>Choose...</option> -->
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -90,7 +90,7 @@
                     <div class="col-auto my-1">
                       <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
                       <select class="custom-select mr-sm-2" id="num5">
-                        <option selected>Choose...</option>
+                        <!-- <option selected>Choose...</option> -->
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -105,7 +105,7 @@
                     <div class="col-auto my-1">
                       <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
                       <select class="custom-select mr-sm-2" id="num6">
-                        <option selected>Choose...</option>
+                        <!-- <option selected>Choose...</option> -->
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -120,7 +120,7 @@
                     <div class="col-auto my-1">
                       <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
                       <select class="custom-select mr-sm-2" id="num7">
-                        <option selected>Choose...</option>
+                        <!-- <option selected>Choose...</option> -->
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -135,7 +135,7 @@
                     <div class="col-auto my-1">
                       <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
                       <select class="custom-select mr-sm-2" id="num8">
-                        <option selected>Choose...</option>
+                        <!-- <option selected>Choose...</option> -->
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -150,7 +150,7 @@
                     <div class="col-auto my-1">
                       <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
                       <select class="custom-select mr-sm-2" id="num9">
-                        <option selected>Choose...</option>
+                        <!-- <option selected>Choose...</option> -->
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -165,7 +165,7 @@
                         <div class="col-auto my-1">
                           <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
                           <select class="custom-select mr-sm-2" id="num10">
-                            <option selected>Choose...</option>
+                            <!-- <option selected>Choose...</option> -->
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -176,16 +176,16 @@
                       </div>
 
                     </form>
+                 
                     <div class="col-auto my-1">
                         <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
                     </div>
 
-                    <div class="modal fade" id="finalCharacterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="finalCharacterModal" tabindex="-1" role="dialog">
                             <div class="modal-dialog" role="document">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h2>Your New Battle Buddy</h2>
+                                  <h2 class="modal-title">Your New Battle Buddy</h2>
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
@@ -194,13 +194,14 @@
                                     <h2 id="finalCharacter"></h2>
                                     <img id="finalCharacterPhoto" src="#">
                                 </div>
+                              </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 </div>
-                              </div>
                             </div>
                 </div>
-    </div>
+        </div>
+    
 
     <footer class="text-center my-5">
             <div class="container">
@@ -212,8 +213,14 @@
     </footer>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"
+      ></script>
     </body>
 </html>
 
@@ -248,9 +255,9 @@ $("#submitBtn").on("click", function(event) {
 			var currentURL = window.location.origin;
 			
 			$.post(currentURL + "/api/friends", newUser, function(data) {
-				$("#finalCharacter").html(data.name);
+				$("#finalCharacter").text(data.name);
 				$("#finalCharacterPhoto").attr("src", data.photo);
-				$("#finalCharacterModal").modal("show");
+				$("#finalCharacterModal").modal("toggle");
 			});
 		} else {
 			// If a required field is missing, show alert
