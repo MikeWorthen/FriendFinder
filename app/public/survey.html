@@ -23,27 +23,9 @@
                     <input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
                 </div>
 
-            <!-- <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h2 class="panel-title"></h2>
-                </div>
-                <div class="panel-body">
-                    <h3>Your Name</h3>
-                    <div class="input-group">
-                        <input id="formName" class="form-control" type="text" name="name" placeholder="John Doe">
-                        <span class="input-group-addon">(Required)</span>
-                    </div>
-                    <br>
-                    <h3>Link to a Photo Image</h3>
-                    <div class="input-group">
-                        <input id="formImage" class="form-control" type="text" name="name" placeholder="your link here">
-                        <span class="input-group-addon">(Required)</span>
-                    </div>
-                </div>
-            </div> -->
         </div>
             <form>
-                <h3>You experience my emotions intensely.</h3>
+                <h3>You experience your emotions intensely.</h3>
                 <div class="form-row mb-4 align-items-center">
                     <div class="col-auto my-1">
                         <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
@@ -266,9 +248,9 @@ $("#submitBtn").on("click", function(event) {
 			var currentURL = window.location.origin;
 			
 			$.post(currentURL + "/api/friends", newUser, function(data) {
-				$("#finalCharacter").text(data.name);
+				$("#finalCharacter").html(data.name);
 				$("#finalCharacterPhoto").attr("src", data.photo);
-				$("#finalCharacterModal").modal("toggle");
+				$("#finalCharacterModal").modal("show");
 			});
 		} else {
 			// If a required field is missing, show alert
