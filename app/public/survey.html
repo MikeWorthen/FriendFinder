@@ -192,7 +192,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <h2 id="finalCharacter"></h2>
-                                    <img id="finalCharacterPhoto" src="#">
+                                    <img style="height:75px; height: 75px" id="finalCharacterPhoto" src="#">
                                 </div>
                               </div>
                                 <div class="modal-footer">
@@ -255,9 +255,9 @@ $("#submitBtn").on("click", function(event) {
 			var currentURL = window.location.origin;
 			
 			$.post(currentURL + "/api/friends", newUser, function(data) {
-				$("#finalCharacter").text(data.name);
-				$("#finalCharacterPhoto").attr("src", data.photo);
-				$("#finalCharacterModal").modal("toggle");
+				$("#finalCharacter").text(data.matchName);
+				$("#finalCharacterPhoto").attr("src", data.matchImage);
+        $("#finalCharacterModal").modal("toggle");
 			});
 		} else {
 			// If a required field is missing, show alert
